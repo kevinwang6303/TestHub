@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background: white;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 2em;
+  transition: all 0.8s cubic-bezier(0.06, 1.03, 0.26, 0.81);
+  .padding-block {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    .icon {
+      cursor: pointer;
+      padding: 0.5em;
+    }
+    .icon:hover {
+      color: red;
+    }
+  }
+  &.move {
+    font-size: 1.5em;
+  }
+}
+
+.hidden-block {
+  height: 64px;
+  &.move {
+    height: 48px;
+  }
+}
+
+.setting {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  padding: 2em;
+  background: #ff7c7c;
+  border-radius: 10px;
+  top: 4.5em;
+  left: 2em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  .setting-item {
+    background: #f6e0ff;
+    cursor: pointer;
+    text-align: center;
+    width: 7em;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s cubic-bezier(0.06, 1.03, 0.26, 0.81);
+    .bg {
+      background: url(/assets/images/01.png);
+      height: 7em;
+      background-size: 100% 100%;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

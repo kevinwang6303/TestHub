@@ -1,0 +1,34 @@
+<header class="header" [appFixedMenu]="'move'" [howFixed]="'top'">
+  <div class="padding-block">
+    <span class="icon icon-cog" (click)="show = !show"></span>
+    <span class="icon icon-enter"></span>
+  </div>
+</header>
+
+<div class="hidden-block" [appFixedMenu]="'move'" [howFixed]="'top'">
+
+</div>
+
+<div class="setting" *ngIf="show" @popup>
+  <section class="setting-item">
+    <div class="bg">
+    </div>
+    <span>
+      題庫管理
+    </span>
+  </section>
+  <section class="setting-item">
+    <div class="bg">
+    </div>
+    <span>
+      題庫搜尋
+    </span>
+  </section>
+  <section class="setting-item">
+    <div class="bg">
+    </div>
+    <span>
+      帳號管理
+    </span>
+  </section>
+</div>
